@@ -1,12 +1,11 @@
-import withAuth from "../with-auth"; // Tanpa kurung kurawal
-import Menu from "../menu";
+// import withAuth from "../with-auth"; // Tanpa kurung kurawal
+// import Menu from "../menu";
+import styles from "./styles.module.css";
 
-function Header() {
+export default function Header() {
     return (
-        <div>
-            <Menu />
+        <div className={styles.header}>
+            Header
         </div>
     );
 }
-
-export default withAuth(Header);
